@@ -20,7 +20,7 @@ USE `orderup` ;
 -- -----------------------------------------------------
 -- Table `orderup`.`Orderables`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `orderup`.`Orderable` (
+CREATE TABLE IF NOT EXISTS `orderup`.`Orderables` (
   `ID` INT NOT NULL,
   `Type` VARCHAR(45) NULL,
   PRIMARY KEY (`ID`))
@@ -30,7 +30,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `orderup`.`Employees`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `orderup`.`Employee` (
+CREATE TABLE IF NOT EXISTS `orderup`.`Employees` (
   `ID` INT NOT NULL,
   `name` VARCHAR(45) NULL,
   `salary` INT NULL,
