@@ -8,7 +8,7 @@ select tables.ID as `Table ID`, orders.ID as `Order ID`, orders.status as `Order
 from tables join orders
 where tables.ID = orders.Tables_ID;
 
-select distinct orders.Tables_ID as "Table", contains.Orders_ID as "Order #", orderables.name as "Item Name", price as "Item Price"
+select orders.Tables_ID as "Table", contains.Orders_ID as "Order #", orderables.name as "Item Name", price as "Item Price"
 from contains join orders join orderables
 where orders.Tables_ID = "1" and orders.ID = contains.Orders_ID and orderables.ID = contains.Orderables_ID;
 
